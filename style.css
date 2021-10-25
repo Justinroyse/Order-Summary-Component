@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: hsl(225, 100%, 94%);
+    position: relative;
+    line-height: 1.6;
+}
+
+.container {
+    background-color: #ffff;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 15%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 6px -6px lightslategray;
+}
+
+.order-title {
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsl(223, 47%, 23%);
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+
+.order-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: hsl(224, 23%, 55%);
+}
+
+.pricing-card {
+    display: flex;
+    background-color: hsl(225, 100%, 98%);
+    margin: 45px;
+    border-radius: 12px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.pricing-card  a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 900;
+}
+.pricing-card>  a:hover{
+    opacity: 0.5;
+    text-decoration: none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.left-part {
+    display: flex;
+    flex-grow: 1;
+    padding: 15px
+}
+
+.left-part div {
+    padding-left: 20px;
+    
+}
+
+.left-part div h3 {
+    color: hsl(223, 47%, 23%);
+    font-weight: bolder;  
+}
+
+.left-part div p {
+    color: hsl(224, 23%, 55%);
+}
+
+.button {
+    display: grid;
+    grid-template-columns: auto;
+    margin-right: 40px;
+    margin-left: 40px;
+    box-shadow: 0 40px 20px -20px lightgray;
+}
+
+.button :hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all 0.5s ease-in-out;
+}
+
+.proceed-btn {
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 15px 100px 15px 100px;
+    background-color: hsl(245, 75%, 52%);
+    color: #fff;
+    border-radius: 15px;
+}
+
+.cancel-link {
+    font-family: 'Red Hat Display', sans-serif;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel-link :hover {
+    color: hsl(223, 47%, 23%);
+    transition: all 0.5s ease-in-out;
+}
+
+.cancel-link a {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    font-weight: 900;
+}
+
+@media only screen and (max-width: 420px) {
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        font-size: 0.875rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+
+    .hero>img {
+        max-width: 100%;
+    }
+
+
+    .container{
+        max-width: 85%;
+    }
+}
+
+@media only screen and (max-width:360px) {
+        body {
+            background-image: url(images/pattern-background-mobile.svg);
+            font-size: 0.5rem;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+    }
+    .proceed-btn {
+        font-family: 'Red Hat Display', sans-serif;
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 15px 20px 15px 20px;
+        background-color: hsl(245, 75%, 52%);
+        color: #fff;
+        border-radius: 15px;
+    }
+}
+
+
+
+
